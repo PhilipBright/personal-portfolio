@@ -17,8 +17,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h1>Hi! Philip's here </h1>
-                <h2>I'm a Web Developer</h2>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <h2>I repair ios devices somtimes.</h2>
+                  <p>I am a web developer based in Yangon. I am very interested in full-stack Development, artificial intelligence and everything in between. If you need any project, just contact me and I would love to make it for you.</p>
                   <a href="mailto:sawkaungsethein123@gmail.com"> <i className="fa-solid fa-envelope"></i> Email me <ArrowRightCircle size={25}/> </a>
                   
               </div>}

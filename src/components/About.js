@@ -12,14 +12,15 @@ import colorSharp from "../assets/img/color-sharp.png"
 export const About = () => {
 
   return (
-    <section className="about" id="home">
+    <section className="about" id="about">
       <Container>
+      <h1 className="tagline">About me</h1>
         <Row className="align-items-center">
         <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                     <span className="tagline">About me</span>
+                     
                 
                   <img className="aboutImg" src={Grad} alt="Grad IMG"/>
                 </div>}
@@ -30,7 +31,11 @@ export const About = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 
-                  <p><h3>Lorem Ipsum has been the industry's</h3>Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. a galley of type and scrambled it to make a type specimen book.</p>
+                  <p className="about-text">I'm currently a second year student of <span>Software Engineer</span>  Major at <span>Info Myanmar University</span> of Yangon. 
+                  While I am studying, I work as a freelancer in <span> front-end </span> web developing and sometimes I repair <span> ios </span> devices.
+                  After second year, I will be joining as a <span>Computer Science</span> student in Singapore.<br></br> <br></br> 
+                  Outside of work, I am interested in reading horrific books. I also play guitar and upload fingerstyle videos on Facebook.
+                  </p>
 
                   
               </div>}
