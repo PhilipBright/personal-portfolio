@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/facebook.png";
 import projImg2 from "../assets/img/wordScramble.png";
 import projImg3 from "../assets/img/foodDeli.png";
+import github from "../assets/img/github.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -38,8 +39,8 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Project creations</h2>
-                <p>Here are some projects and that will link to the Github for source codes.</p>
-                <a href="https://github.com/PhilipBright"><img src="../assets/img/github.png"></img></a>
+                <p>Here are some projects and all of the project source codes can be found on Github.</p>
+                <p>Here is the link <a href="https://github.com/PhilipBright"><img className="project-github" src={github}></img></a> to the Github</p>
 
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
