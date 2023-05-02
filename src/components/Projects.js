@@ -3,6 +3,7 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/facebook.png";
 import projImg2 from "../assets/img/wordScramble.png";
 import projImg3 from "../assets/img/foodDeli.png";
+import projImg4 from "../assets/img/e-commerce.png";
 import github from "../assets/img/github.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -10,17 +11,17 @@ import TrackVisibility from 'react-on-screen';
 
 export const Projects = () => {
 
-  const projects = [
+  const projects1 = [
     {
+      title: "E-commerce Website",
+      description: "Design & Development with PHP & MySQL",
+      imgUrl: projImg4,
+    },
+    {
+      
       title: "Facebook Clone",
       description: "Design & Development with HTML & CSS",
       imgUrl: projImg1,
-  
-    },
-    {
-      title: "Word Scrumble",
-      description: "Design & Development with JavaScript",
-      imgUrl: projImg2,
     },
     {
       title: "Food Delivery",
@@ -28,7 +29,13 @@ export const Projects = () => {
       imgUrl: projImg3,
       
     },
+    
   ];
+  const projects2 = [{
+    title: "Word Scramble",
+    description: "Design & Development with JavaScript",
+    imgUrl: projImg2,
+  }];
 
   return (
     <section className="project" id="projects">
@@ -40,7 +47,8 @@ export const Projects = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Project creations</h2>
                 <p>Here are some projects and all of the project source codes can be found on Github.</p>
-                <p>Here is the link <a href="https://github.com/PhilipBright"><img className="project-github" src={github}></img></a> to the Github</p>
+                <p>Here is the link to the Github</p>
+                <p><a href="https://github.com/PhilipBright"><img className="project-github" src={github}></img></a></p>
 
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -58,7 +66,7 @@ export const Projects = () => {
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
-                          projects.map((project, index) => {
+                          projects1.map((project, index) => {
                             return (
                               <ProjectCard
                                 key={index}
@@ -71,7 +79,16 @@ export const Projects = () => {
                     </Tab.Pane>
                     <Tab.Pane eventKey="second">
                     <Row>
-                       <h2>I am working on it...</h2>
+                    {
+                          projects2.map((project, index) => {
+                            return (
+                              <ProjectCard
+                                key={index}
+                                {...project}
+                                />
+                            )
+                          })
+                        }
                       </Row> 
                       </Tab.Pane>
                     <Tab.Pane eventKey="third">

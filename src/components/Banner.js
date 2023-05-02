@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import democracy from "../assets/img/democracy.JPG";
+import profile from "../assets/img/profile.jpg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -29,7 +29,7 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
                   <img className="img1" src={headerImg} alt="Header Img"/>
-                  <img className="img2" src={democracy} alt="Header Img"/>
+                  <img className="img2" src={profile} alt="Header Img"/>
                 </div>}
             </TrackVisibility>
           </Col>

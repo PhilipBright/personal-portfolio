@@ -47,7 +47,16 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Image3" />
-                                <h5>React.js</h5>
+                                <h5>React</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Image3" />
+                                <h5>React Native</h5>
+                            </div>
+                            
+                            <div className="item">
+                                <img src={meter3} alt="Image3" />
+                                <h5>PHP</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Image1" />
