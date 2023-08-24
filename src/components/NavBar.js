@@ -4,7 +4,7 @@ import logo from '../assets/img/pblogo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import navIcon4 from '../assets/img/github.png';
+import navIcon4 from '../assets/img/github.svg';
 
 import { HashLink } from 'react-router-hash-link';
 import {
@@ -56,6 +56,7 @@ export const NavBar = () => {
                 <a href="https://www.linkedin.com/in/saw-kaung-set-hein-64a35a21a/" target="_blank" rel="noOpener noReferrer"><img src={navIcon1} alt="" /></a>
                 <a href="https://www.facebook.com/philip.bright.351/" target="_blank" rel="noOpener noReferrer"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/brightbenotyours/" target="_blank" rel="noOpener noReferrer"><img src={navIcon3} alt="" /></a>
+                <a href="https://github.com/PhilipBright" target="_blank" rel="noOpener noReferrer"><img style={{width:'40px', height:'40px', }} src="https://img.icons8.com/ios-filled/50/FFFFFF/github.png" alt="github"/></a>
 
               </div>
               <HashLink to='#connect'>

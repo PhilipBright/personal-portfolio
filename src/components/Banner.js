@@ -16,9 +16,9 @@ export const Banner = () => {
             <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <h1>Hi! Philip's here </h1>
+                <h1>Hi! Saw Kaung Set Hein's here </h1>
                 <h2>I repair ios devices somtimes.</h2>
-                  <p>I am a web developer based in Yangon. I am very interested in full-stack Development, artificial intelligence and everything in between. If you need any project, just contact me and I would love to make it for you.</p>
+                  <p>I am a Full-Stack developer based in Yangon. I am very interested in Web & App Development, artificial intelligence and everything in between. If you need any project, just contact me and I would love to make it for you.</p>
                   <a href="mailto:sawkaungsethein123@gmail.com"> <i className="fa-solid fa-envelope"></i> Email me <ArrowRightCircle size={25}/> </a>
                   
               </div>}
