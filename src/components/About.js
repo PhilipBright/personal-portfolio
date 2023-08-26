@@ -35,6 +35,7 @@ export const About = () => {
                   While I am studying, I work as a freelancer in <span> Full-Stack </span> web developing and sometimes I create <span> Applications </span>.
                   After final year, I will be joining as a <span>Master of Computer Science</span> student in United State.<br></br> <br></br> 
                   Outside of work, I am interested in exploring about <span>Artificial Intelligence Technology</span>.
+                  
                   </p>
 
                   
