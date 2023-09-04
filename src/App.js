@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import { Analytics } from '@vercel/analytics/react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
@@ -21,7 +22,8 @@ function App() {
       <Projects />
       <Contact />
       <Footer />
-     
+      <Analytics />
+
     </div>
   );
 }
